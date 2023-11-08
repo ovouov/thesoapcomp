@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal_Test</title>
+    <style>
+        #popup {
+            display: none;
+        }
+
+        #popup+label {
+            display: inline-block;
+            padding: 20px;
+            background: #ffcd41;
+            color: #fff;
+        }
+
+        #popup+label+div {
+            opacity: 100;
+            visibility: hidden;
+            transition: all 1s;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 100;
+        }
+
+        #popup:checked+label+div {
+            opacity: 100;
+            visibility: visible;
+            display: block;
+        }
+
+        #popup+label+div>div>label {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(40%, 40%);
+            padding: 20px;
+            background: #dd5347;
+            border-radius: 100%;
+            z-index: 1;
+        }
+
+        #popup+label+div>label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+
+        #login_box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 650px;
+            background: #fff;
+            z-index: 2;
+        }
+
+        #login_box>h1 {
+            font-size: 1.3em;
+            display: block;
+            text-align: center;
+            padding: 1.5vh;
+            border-bottom: 1px solid rgb(112, 111, 111);
+        }
+
+        #one {
+            margin: 2vh auto;
+            width: 85%;
+            height: 20%;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+
+        #one>input {
+            width: 80%;
+            height: 30%;
+            padding-left: 5%;
+            border: 1px solid gray;
+
+        }
+
+
+        #one>input::placeholder {
+            text-align: left;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        #login_btn {
+            width: 85%;
+            height: 50%;
+            background: rgba(0, 0, 0, 0.0);
+            font-size: 1em;
+            margin: 2vh auto;
+            display: block;
+        }
+
+        #login_btn:hover {
+            background: rgb(141, 127, 90);
+            color: white;
+            border: none;
+        }
+
+        #login_btn:active {
+            background: #337ab7;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="popup" />
+    <label for="popup">LOGIN</label>
+    <div>
+        <div id="login_box">
+            <h1>로그인</h1>
+            <div id="one">
+                <input type="email" placeholder="이메일">
+                <input type="password" placeholder="비밀번호">
+                <div id="login_check"><input type="checkbox"><span>로그인상태유지</span></div>
+                <button id="login_btn">로그인</button>
+                <div id="two">
+                    <a href="##">회원가입</a><a href="##">아이디 · 비밀번호 찾기</a>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div id="border-left"></div>또는<div id="border-right"></div>
+            <br>
+            <br>
+            <button>비회원 주문배송 조회</button>
+            <label for="popup">
+
+            </label>
+        </div>
+        <label for="popup">
+        </label>
+    </div>
+
+
+
+
+
+    
+</body>
+
+</html>

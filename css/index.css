@@ -1,0 +1,513 @@
+/*==========================WEB========================*/
+/*==========================Index========================*/
+#wrap {
+  width: 100vw;
+  position: relative;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+#back_cover {
+  width: 100%;
+  position: relative;
+}
+
+#back_cover>img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  z-index: -10;
+}
+
+#head {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid white;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+#hidden_menu {
+  width: 20%;
+}
+
+#hidden_menu>i {
+  padding-left: 2vw;
+  font-size: 1.3em;
+  color: white;
+  cursor: pointer;
+}
+
+#hidden_menu>i:hover {
+  color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+#logo {
+  width: 40%;
+  text-align: center;
+  font-size: 1.8vw;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#nav {
+  width: 20%;
+}
+
+#nav_ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#nav_li {
+  font-size: 0.9vw;
+  width: 25%;
+  text-align: center;
+}
+
+#nav_a {
+  color: white;
+}
+
+#nav_a:hover {
+  transition: 0.2s;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+#main_h1 {
+  margin: 0 auto;
+  padding-top: 8vw;
+  font-size: 4.5vw;
+  color: white;
+  width: 50%;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+#main_p_box {
+  width: 50%;
+  margin: 4vw auto;
+  color: white;
+  font-size: 1.1vw;
+}
+
+#main>button {
+  padding: 1vw 3vw;
+  background: none;
+  border: 0.7px solid white;
+  color: white;
+  font-size: 1.1vw;
+}
+
+#main>button:hover {
+  transition: 0.5s;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#hidden_menubar {
+  width: 20%;
+  height: 100vh;
+  position: absolute;
+  background: white;
+  transform: translateX(-100%);
+  transition: 1s;
+}
+
+#hidden_menu_ul>i {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+
+#hidden_menu_ul>i:hover {
+  transition: 0.5s;
+  transform: rotate(90deg);
+}
+
+#hidden_menu_ul {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#hidden_menu_ul>h1 {
+  font-size: 2.3vw;
+  margin: 10vh 0;
+}
+
+#hidden_menu_ul>h1>a {
+  text-decoration: none;
+  color: black;
+}
+
+#hidden_menu_li {
+  width: 100%;
+  height: 10vh;
+  line-height: 10vh;
+  font-size: 1vw;
+  transition: 0.5s;
+}
+
+#hidden_menu_li:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#hidden_menu_a {
+  text-decoration: none;
+  color: black;
+}
+
+.slide {
+  left: 0%;
+}
+
+/*==========================One========================*/
+
+#one {
+  font-family: 'Nanum Myeongjo', serif;
+  width: 100%;
+}
+
+#text_box {
+  width: 60%;
+  margin: 20vh auto;
+  text-align: center;
+}
+
+#text_box>h1 {
+  font-size: 3em;
+}
+
+#text_box>p {
+  padding: 10vh;
+  font-size: 1em;
+}
+
+#item_box {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#item_1 {
+  width: 50%;
+  text-align: center;
+}
+
+#item_img {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#item_img>img {
+  width: 100%;
+  object-fit: cover;
+  filter: saturate(0);
+}
+
+#item_img>img:hover {
+  transition: 1s;
+  transform: scale(115%);
+  filter: saturate(1);
+}
+
+#item_2 {
+  width: 50%;
+}
+
+#item_text_box {
+  width: 80%;
+  margin: 2.5vh auto;
+  text-align: left;
+}
+
+#item_text_box>h1 {
+  font-size: 1.3em;
+}
+
+#item_text_box>p {
+  font-size: 0.8em;
+  padding: 2vh 0;
+}
+
+#item_text_box>button {
+  border: 0.1em dotted black;
+  padding: 0.8vh 1vw;
+  cursor: pointer;
+  background: rgba(185, 181, 181, 0.13);
+  transition: 0.5s;
+}
+
+#item_text_box>button:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/*==========================One========================*/
+/*==========================Two========================*/
+#two {
+  width: 100%;
+  height: 35vh;
+  background-image: url("/image/bathroom-2460377_1920.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  object-fit: cover;
+  text-align: center;
+  padding: 3vh;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+#two_text_box {
+  width: 90%;
+  height: 20vh;
+  margin: 5vh auto;
+}
+
+#two_text_box>h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#two_text_box>p {
+  padding: 4vh;
+  font-size: 1.5vw;
+}
+
+#two_i {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+}
+
+#two_i>i {
+  width: 25%;
+  font-size: 2em;
+}
+
+#two_i>p {
+  font-weight: bold;
+  padding: 1vh;
+  font-size: 1.1em;
+}
+
+/*==========================Two========================*/
+/*==========================Three========================*/
+
+#three {
+  margin: 10vh;
+  text-align: center;
+}
+
+#three_text {
+  width: 100%;
+}
+
+#three_text>h1 {
+  font-size: 2em;
+  padding: 5vh;
+}
+
+#three_text>p {
+  font-size: 1em;
+  padding-bottom: 5vh;
+}
+
+#three_text>input {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 1vh 2vw;
+}
+
+#three_text>input::placeholder {
+  text-align: center;
+}
+
+#three_text>button {
+  border: 1px solid black;
+  cursor: pointer;
+  background: none;
+  padding: 1vh 2vw;
+  font-size: 0.7em;
+}
+
+/*==========================Three========================*/
+/*==========================fotter========================*/
+
+#footer {
+  width: 100%;
+  height: 25vh;
+  background: #e5e7eb;
+  text-align: center;
+  color: #464646;
+}
+
+#footer>h1 {
+  font-weight: bold;
+  padding: 3vh;
+  font-size: 1.1em;
+}
+
+#footer>i {
+  font-size: 1.2em;
+  padding: 1vw;
+  transition: 0.5s;
+}
+
+#footer>i:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+#footer>p {
+  font-size: 0.7em;
+  padding: 1vh;
+}
+
+#footer>span {
+  font-size: 0.8em;
+  border-bottom: 1px solid black;
+}
+
+/*==========================fotter========================*/
+
+/*==========================Index========================*/
+
+/*==========================WEB========================*/
+
+/*==========================PHONE========================*/
+@media screen and (max-width:500px) {
+  #head {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid white;
+    font-family: "Nanum Myeongjo", serif;
+  }
+
+  #hidden_menu {
+    position: absolute;
+    top: 40%;
+    right: -7%;
+  }
+
+  #nav {
+    position: absolute;
+    top: 100%;
+    right: 25%;
+    width: 50%;
+    margin: 1vh auto;
+  }
+
+  #nav_li {
+    font-size: 1em;
+  }
+
+  #main_h1 {
+    font-weight: bold;
+    width: 85%;
+    font-size: 8vw;
+    margin-top: 5vh;
+  }
+
+  #logo {
+    font-size: 3.5vw;
+    margin: 0 auto;
+  }
+
+  #main_p_box {
+    width: 85%;
+  }
+
+  #main_p {
+    font-size: 3.5vw;
+    font-weight: bold;
+    margin-bottom: 7vh;
+  }
+
+  #text_box>h1 {
+    font-size: 2em;
+  }
+
+  #text_box>p {
+    padding: 10vh;
+    font-size: 1.2em;
+    color: gray;
+
+  }
+
+  #text_box {
+    width: 90%;
+    margin: 5vh auto;
+    text-align: center;
+  }
+
+  #main>button {
+    padding: 1.4vh 12vw;
+    background: none;
+    border: 0.7px solid white;
+    color: white;
+    font-size: 3Fvw;
+    font-weight: bold;
+  }
+
+  #item_box {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #item_1 {
+    width: 100%;
+  }
+
+  #item_2 {
+    width: 100%;
+  }
+
+  #item_text_box>button {
+    border: 0.1em solid gray;
+    padding: 2vh 10vw;
+    cursor: pointer;
+    background: rgba(185, 181, 181, 0.13);
+    transition: 0.5s;
+  }
+
+  #two_text_box {
+    width: 90%;
+  }
+
+  #two_text_box>p {
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+  #two_i {
+    font-size: 2vw;
+    width: 20%;
+  }
+}
+
+/*==========================PHONE========================*/
